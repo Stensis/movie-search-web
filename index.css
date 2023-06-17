@@ -1,0 +1,53 @@
+/* LARGE SCREEN */
+/* ******************************************************************* */
+
+body {
+  background-color: #2b2d42;
+}
+
+/* header/search button */
+header {
+  padding: 20px;
+}
+
+h1 {
+  color: #d90429;
+}
+
+#search-form {
+  margin-top: 20px;
+}
+
+#search-input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #7e1d22;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#search-input:focus {
+  border: 2px solid #16323a;
+  border-radius: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #8d99ae;
+  color: #2b2d42;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #edf2f4;
+}
+
+/* movies container */
+.movie-container {
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
