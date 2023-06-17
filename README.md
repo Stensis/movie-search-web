@@ -3,10 +3,10 @@
 This is a Movie Search App that allows users to search for movies and retrieve relevant information about them. The app provides a user-friendly interface where users can enter movie titles and receive search results.
 
                                 Larger screen
-![Large screen](./Assets/large.png)
+![Large screen](./Assets/largePic.png)
 
                                 small devices 
-![Small screen](./Assets/small.png)
+![Small screen](./Assets/smallPic.png)
 
 
                                 Table of Contents
@@ -46,6 +46,7 @@ To get started with the Movie Search App, follow these steps:
 3. The search results will be displayed below the search input.
 4. Click on a movie to view additional details.
 5. Explore the app and search for different movies as desired.
+6. To clear the search input click the Cancel button ON the search input.
 
 ## Contributing
 
