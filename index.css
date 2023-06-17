@@ -144,3 +144,49 @@ button[type="submit"]:hover {
     background-color: #9eb1ae;
   }
 }
+/* movies container */
+.movie-container {
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-item {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 2px solid #e0ca23;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px #8d7d01;
+}
+
+.movie-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.movie-item h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.movie-item p {
+  margin: 2px 0;
+}
+
+.read-more-button {
+  background-color: #68a59d;
+  border: none;
+  border-radius: 5px;
+  border: 3px solid#1f0a0a;
+  color: hsl(358, 22%, 78%);
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.additional-info {
+  margin-top: 10px;
+}
