@@ -1,4 +1,6 @@
-// index.js
+// IMPORTANT: The API key below is for demonstration purposes only and should NOT be exposed in production.
+// The API key should be securely stored and accessed through environment variables to follow best practices for securing sensitive information.
+
 const apiKey = "1d67cb07";
 
 //................................................................
@@ -16,6 +18,7 @@ searchForm.addEventListener("submit", function (event) {
     fetchMovieData(searchTerm);
   }
 });
+
 // to clear the search term input field
 function clearInput() {
   document.getElementById("search-input").value = "";
@@ -23,8 +26,7 @@ function clearInput() {
   showResultsLine.textContent = "";
 }
 
-//   to show the user the results they are searching for
-
+// to show the user the results they are searching for
 function submitForm(event) {
   event.preventDefault(); // Prevent form submission
   var searchQuery = document.getElementById("search-input").value;
@@ -33,6 +35,7 @@ function submitForm(event) {
     : "";
   // Additional code for performing the search or displaying search results
 }
+
 // ........................................................................
 
 async function fetchMovieData(searchTerm) {
@@ -83,10 +86,10 @@ function displayMovieResults(movies) {
     movieItem.innerHTML = `
     <img src="${movie.Poster}" style="height: auto;" alt="${movie.Title}">
     <h2 style="color:#e5e5e5">
-        <strong style="color:#ef233c">Title:</strong>
+        <strong style="color:#c9ada7">Title:</strong>
         ${movie.Title}</h2>
-        <p style="color:#e5e5e5" ><strong style="color:#ef233c">Year:</strong>${movie.Year}</p>
-        <button class="read-more-button" style="color:#ef233c" data-id="${movie.imdbID}">View details</button>
+        <p style="color:#e5e5e5" ><strong style="color:#c9ada7">Year:</strong>${movie.Year}</p>
+        <button class="read-more-button" style="color:#c9ada7" data-id="${movie.imdbID}">View details</button>
         <div class="additional-info" style="display: none;"></div>
       `;
     movieList.appendChild(movieItem);
@@ -118,13 +121,13 @@ async function showAdditionalInfo(event) {
             <div style="text-align: left">
             
                 <p style="font-size: 20px;color:#e5e5e5"> 
-                <strong style="color:#ef233c">Plot:</strong>
+                <strong style="color:#c9ada7">Plot:</strong>
                  ${Plot}</p>
                 <p style="font-size: 20px;color:#e5e5e5"> 
-                <strong style="color:#ef233c">Genre:</strong>
+                <strong style="color:#c9ada7">Genre:</strong>
                  ${Genre}</p>
                 <p style="font-size: 20px;color:#e5e5e5">
-                 <strong style="color:#ef233c">Actors:</strong >
+                 <strong style="color:#c9ada7">Actors:</strong >
                   ${Actors}</p>
             </div>
           `;
