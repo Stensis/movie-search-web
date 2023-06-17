@@ -130,5 +130,6 @@ async function showAdditionalInfo(event) {
 }
 // Display an error message
 function displayErrorMessage(message) {
-    movieList.innerHTML = `<p class="error-message">${message}</p>`;
+    movieList.innerHTML = `<p class="error-message" style="text-align: center;">${message}</p>`;
   }
+  
