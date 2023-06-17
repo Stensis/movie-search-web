@@ -4,6 +4,14 @@
 body {
   background-color: #2b2d42;
 }
+.search-container {
+  position: relative;
+}
+
+#search-input {
+  padding-right: 25px;
+}
+
 
 /* header/search button */
 header {
@@ -38,6 +46,15 @@ button[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+#clear-icon {
+  background-color: #d90429;
+  margin-top: 20px;
+  /* padding: 10px ; */
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 5px;
 }
 
 button[type="submit"]:hover {
@@ -93,6 +110,22 @@ button[type="submit"]:hover {
 
 .additional-info {
   margin-top: 10px;
+}
+
+/* added for x for clear */
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.clear-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #808080;
+  text-transform: lowercase;
 }
 
 /* ******************************************************************* */
@@ -191,4 +224,21 @@ button[type="submit"]:hover {
   .additional-info {
     margin-top: 10px;
   }
+
+  /* added for x for clear */
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.clear-icon {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #808080;
+  text-transform: lowercase;
+}
+
 }

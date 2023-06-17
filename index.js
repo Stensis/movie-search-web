@@ -5,6 +5,7 @@ const apiKey = "1d67cb07";
 const searchForm = document.getElementById("search-form");
 const searchInput = document.getElementById("search-input");
 const movieList = document.getElementById("movie-list");
+const showResultsLine = document.getElementById("search-query");
 
 searchForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the default form submission behavior
@@ -15,7 +16,23 @@ searchForm.addEventListener("submit", function (event) {
     fetchMovieData(searchTerm);
   }
 });
+// to clear the search term input field
+function clearInput() {
+  document.getElementById("search-input").value = "";
+  document.getElementById("movie-list").innerHTML = "";
+  showResultsLine.textContent = "";
+}
 
+//   to show the user the results they are searching for
+
+function submitForm(event) {
+  event.preventDefault(); // Prevent form submission
+  var searchQuery = document.getElementById("search-input").value;
+  showResultsLine.textContent = searchQuery
+    ? "Showing results of: " + searchQuery
+    : "";
+  // Additional code for performing the search or displaying search results
+}
 // ........................................................................
 
 async function fetchMovieData(searchTerm) {

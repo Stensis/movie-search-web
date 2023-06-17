@@ -13,18 +13,22 @@
         <h1>Movie Search App</h1>
       </header>
 
-      <form id="search-form">
-        <input type="text" id="search-input"
-          placeholder="Search for movies...">
+      <form id="search-form" onsubmit="submitForm(event)">
+        <div class="input-container">
+          <input type="text" id="search-input" placeholder="Search for movies...">
+          <span class="clear-icon" onclick="clearInput()">&times;</span>
+        </div>
         <button type="submit">Search</button>
+        <p style="color: white" id="search-query"></p>
       </form>
 
       <main id="movie-list" class="movie-container">
         <!-- Movie search results will be dynamically added here -->
       </main>
-      
+
     </center>
 
     <script src="index.js"></script>
+
   </body>
 </html>
