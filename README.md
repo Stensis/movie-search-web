@@ -9,7 +9,7 @@ This is a Movie Search App that allows users to search for movies and retrieve r
 ![Small screen](./Assets/small.png)
 
 
-                                ## Table of Contents
+                                Table of Contents
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -18,20 +18,20 @@ This is a Movie Search App that allows users to search for movies and retrieve r
 - [Contributing](#contributing)
 - [License](#license)
 
-                                    ## Features
+## Features
 
 - Search for movies using a keyword or title.
 - Display a list of search results with relevant information for each movie.
 - Click on a movie to view additional details.
 - Responsive design for different screen sizes.
 
-                                ## Technologies Used
+## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
 
-                                ## Getting Started
+## Getting Started
 
 To get started with the Movie Search App, follow these steps:
 
@@ -39,7 +39,7 @@ To get started with the Movie Search App, follow these steps:
 2. Navigate to the project directory: `cd movie-search-app`
 3. Open the `index.html` file in your preferred web browser.
 
-                                    ## Usage
+## Usage
 
 1. Enter a movie title or keyword in the search input field.
 2. Click the "Search" button or press Enter to initiate the search.
@@ -47,11 +47,11 @@ To get started with the Movie Search App, follow these steps:
 4. Click on a movie to view additional details.
 5. Explore the app and search for different movies as desired.
 
-                                    ## Contributing
+## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to submit a pull request or open an issue in the GitHub repository.
 
-                                        ## License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
