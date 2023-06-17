@@ -51,3 +51,47 @@ button[type="submit"]:hover {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* movies container */
+.movie-container {
+  padding: 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-item {
+  width: calc(20% - 16px); /* Adjusted width to accommodate margin */
+  margin-bottom: 40px;
+  margin-right: 16px; /* Add margin-right for space between cards */
+  padding: 20px;
+  border: 2px solid #edf2f4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #8d99ae;
+}
+
+.movie-item:last-child {
+  margin-right: 0; /* Remove margin-right for the last card */
+}
+
+.movie-item h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.movie-item p {
+  margin: 2px 0;
+}
+
+.read-more-button {
+  background-color: #edf2f4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.additional-info {
+  margin-top: 10px;
+}
