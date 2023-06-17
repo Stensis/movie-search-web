@@ -128,3 +128,7 @@ async function showAdditionalInfo(event) {
     button.textContent = "View details";
   }
 }
+// Display an error message
+function displayErrorMessage(message) {
+    movieList.innerHTML = `<p class="error-message">${message}</p>`;
+  }
